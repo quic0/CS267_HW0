@@ -15,7 +15,9 @@ To solve difficult problems such as TSP, a common approach is to use a branch-an
 Originally, branch-and-bound was used as a sequential algorithm. However, it is inherently a parallel algorithm. At any given time, a large number of nodes need to be explored. Instead of exploring these nodes sequentially, this can be done in parallel. To do this efficiently, very efficient solvers have been developed to solve sparse systems of linear equations. Solving these systems is necessary to find the continuous solution at each of the nodes.
 
 A major challenge in parallelizing this algorithm are the global decisions that should be made by the algorithm. Challenging coordination decisions include but are not limited too:
+
 - Which nodes should be processed first? Depth-first or Breadth-first?
 - How should the best solution value be communicated?
 - How to assign jobs to workers?
+
 For many of these questions heuristic solutions have been developed based on extensive experimental analysis.
