@@ -17,5 +17,5 @@ Originally, branch-and-bound was used as a sequential algorithm. However, it is 
 A major challenge in parallelizing this algorithm are the global decisions that should be made by the algorithm. Challenging coordination decisions include but are not limited too:
 - Which nodes should be processed first? Depth-first or Breadth-first?
 - How should the best solution value be communicated?
--
+- How to assign jobs to workers?
 For many of these questions heuristic solutions have been developed based on extensive experimental analysis.
