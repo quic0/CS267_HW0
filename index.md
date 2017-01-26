@@ -20,4 +20,8 @@ A major challenge in parallelizing this algorithm are the global decisions that 
 - How should the best solution value be communicated?
 - How to assign jobs to workers?
 
-For many of these questions heuristic solutions have been developed based on extensive experimental analysis.
+For many of these questions heuristic solutions have been developed based on extensive experimental analysis. Finding effective answers to these questions, performance coding, algorithmic improvements, and hardware improvements have resulted in a speedup of 300 billion times in integer programming since 1991 [1]. A speedup of 180,000x can be attributed to software improvements alone.
+
+These improvements have made getting optimal / good solutions for NP-hard problems much more realistic. This has enabled large-scale applications of integer programming in practice. For example, integer programming is used extensively in the energy sector for deciding which plants should be active and how to price electricity. Furthermore, large-scale integer programming problems are currently used by the FCC to organize the buyback of broadcast frequencies from media companies and to resell these frequency licenses to telecommunication companies. If we are able to exploit parallelism even future we come another step closer to solving even more problems through integer programming.
+
+[1]: Dimitris Bertsimas, “Statistics and Machine Learning via a Modern Optimization Lens.”  The 2014-2015 Philip McCord Morse Lecture, INFORMS Annual Meeting, November 11, 2014.
